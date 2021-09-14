@@ -9,7 +9,7 @@ suma(50, 60);
 
 /* Funciones expresivas */
 
-let resta = function (numeroUno, numeroDos) {
+const resta = function (numeroUno, numeroDos) {
     console.log(`La resta de los numeros ${numeroUno} y ${numeroDos} es: ` + (numeroUno - numeroDos));
 }
 resta(20, 10);
