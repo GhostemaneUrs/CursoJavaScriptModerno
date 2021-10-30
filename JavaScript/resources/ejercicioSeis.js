@@ -1,6 +1,6 @@
 /* Programa una función que dada una cadena de texto cuente el número de vocales y consonantes, pe. miFuncion("Hola Mundo") devuelva Vocales: 4, Consonantes: 5. */
 
-const vocalesConsonantes = function (cadena) {
+const vocalesConsonantes = (cadena) => {
     if (!cadena) {
         console.log('Ingrese algo por favor')
     } else if (typeof cadena !== 'string') {
@@ -18,7 +18,7 @@ vocalesConsonantes('Hola Mundo')
 
 /* Programa una función que valide que un texto sea un nombre válido, pe. miFuncion("Jonathan MirCha") devolverá verdadero. */
 
-const validarNombre = function (nombre) {
+const validarNombre = (nombre) => {
     if (!nombre) {
         console.log('Ingrese algo por favor')
     } else if (typeof nombre !== 'string') {
@@ -39,7 +39,7 @@ validarNombre('Jonathan MirCha')
 
 /* Programa una función que valide que un texto sea un email válido, pe. miFuncion("jonmircha@gmail.com") devolverá verdadero. */
 
-const validarCorreo = function (correo) {
+const validarCorreo = (correo) => {
     if (!correo) {
         console.log('Ingrese algo por favor')
     } else if (typeof correo !== 'string') {
