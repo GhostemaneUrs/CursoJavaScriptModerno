@@ -1,6 +1,6 @@
 /* Programa una función que invierta las palabras de una cadena de texto, pe. miFuncion("Hola Mundo") devolverá "odnuM aloH" */
 
-const invertirCadena = function (cadena) {
+const invertirCadena = (cadena) => {
     if (!cadena) {
         console.log('La cadena no puede ir vacia')
     } else if (typeof cadena !== 'string') {
@@ -14,7 +14,7 @@ invertirCadena('Hola')
 
 /* Programa una función para contar el número de veces que se repite una palabra en un texto largo, pe. miFuncion("hola mundo adios mundo", "mundo") devolverá 2 */
 
-const buscarPalabraRepetida = function (texto, palabra) {
+const buscarPalabraRepetida = (texto, palabra) => {
     if (!texto && !palabra) {
         console.log('Los valores no puede ir vacios')
     } else if (typeof texto !== 'string' && typeof palabra !== 'string') {
@@ -39,7 +39,7 @@ buscarPalabraRepetida('hola mundo adios mundo', 'adiós')
 
 /* Programa una función que valide si una palabra o frase dada, es un palíndromo (que se lee igual en un sentido que en otro), pe. mifuncion("Salas") devolverá true. */
 
-const palindromo = function (cadena) {
+const palindromo = (cadena) => {
     if (!cadena) {
         console.log('El valor no puede ser vacio')
     } else if (typeof cadena !== 'string') {
@@ -55,7 +55,7 @@ palindromo('Ali tomo tila')
 
 /* Programa una función que elimine cierto patrón de caracteres de un texto dado, pe. miFuncion("xyz1, xyz2, xyz3, xyz4 y xyz5", "xyz") devolverá  "1, 2, 3, 4 y 5. */
 
-const eliminarPatron = function (cadena, patron) {
+const eliminarPatron = (cadena, patron) => {
     if (!cadena && !patron) {
         console.log('El valor no puede ser vacio')
     } else if (typeof cadena !== 'string' && typeof patron !== 'string') {
