@@ -1,6 +1,6 @@
 /*  Programa una función para convertir números de base binaria a decimal y viceversa, pe. miFuncion(100,2) devolverá 4 base 10. */
 
-const binarioDecimal = function (numero, base) {
+const binarioDecimal = (numero, base) => {
     if (!numero || isNaN(numero) || typeof numero !== 'number') {
         console.log("El número introducido no es válido");
     } else if (Math.sign(numero) === -1) {
@@ -24,7 +24,7 @@ binarioDecimal(100, 2)
 
 /* Programa una función que devuelva el monto final después de aplicar un descuento a una cantidad dada, pe. miFuncion(1000, 20) devolverá 800 */
 
-const descuento = function (numero, descuentos) {
+const descuento = (numero, descuentos) => {
     if (!numero || isNaN(numero) || typeof numero !== 'number' && !descuentos
         || isNaN(descuentos) || typeof descuentos !== 'number') {
         console.log("El número introducido no es válido");
@@ -42,7 +42,7 @@ descuento(1000, 20)
 
 /* Programa una función que dada una fecha válida determine cuantos años han pasado hasta el día de hoy, pe. miFuncion(new Date(1984,4,23)) devolverá 35 años (en 2020) */
 
-const añosPasados = function (fecha) {
+const añosPasados = (fecha) => {
     if (!fecha) {
         console.log('No se permiten valores vacios')
     } else {
