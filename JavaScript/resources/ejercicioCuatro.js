@@ -1,6 +1,6 @@
 /* Programa una función que determine si un número es primo (aquel que solo es divisible por sí mismo y 1) o no, pe. miFuncion(7) devolverá true. */
 
-const verificarPrimos = function (numero) {
+const verificarPrimos = (numero) => {
     if (isNaN(numero)) {
         console.log('No se permite valores vacios')
     } else if (typeof numero !== 'number') {
@@ -23,7 +23,7 @@ verificarPrimos(7)
 
 /* Programa una función que determine si un número es par o impar, pe. miFuncion(29) devolverá Impar. */
 
-const verificarParImpara = function (numero) {
+const verificarParImpara = (numero) => {
     if (isNaN(numero)) {
         console.log('No se permite valores vacios')
     } else if (typeof numero !== 'number') {
@@ -41,7 +41,7 @@ verificarParImpara(3)
 
 /* Programa una función para convertir grados Celsius a Fahrenheit y viceversa, pe. miFuncion(0,"C") devolverá 32°F. */
 
-const gradosCelsiusFahrenheit = function (numero, grados) {
+const gradosCelsiusFahrenheit = (numero, grados) => {
     if (isNaN(numero) || !grados) {
         console.log('No se permiten valores vacios')
     } else if (typeof numero !== 'number') {
