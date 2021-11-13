@@ -19,3 +19,21 @@ const perro = {
         console.log(this)
     }
 }
+
+const personas = [
+    {
+        nombre: 'Andres',
+        apellido: 'Jaramillo',
+        edad: 22,
+        hobbies: ['Jugar Videojuegos', 'Aprender programacion', 'Salir con los amigos']
+    },
+    {
+        nombre: 'Keiner',
+        apellido: 'Jaramillo',
+        edad: 16,
+        hobbies: ['Ver futbol', 'Jugar futbol', 'Comer']
+    }
+]
+const mostrarHobbies = personas.map(persona => `Los hobbies son: ${persona.hobbies}`);
+personas.forEach(persona => console.log(`${persona.nombre} tiene ${persona.edad} años`));
+console.log(mostrarHobbies)
