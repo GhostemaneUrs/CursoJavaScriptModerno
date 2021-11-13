@@ -13,3 +13,10 @@ const persona = {
 }
 
 const {primerNombre, primerApellido, edad} = persona
+
+/* Destructuracion en los array  */
+
+const array = ["Computadora", "Celular", ["Xiaomi", "Samsung", "Apple"]]
+const [primero, segundo, [...marcas]] = array
+console.log(marcas)
+
