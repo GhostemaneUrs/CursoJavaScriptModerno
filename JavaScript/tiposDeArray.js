@@ -2,6 +2,10 @@
 
 const array = ["Computadora", "Celular", ["Xiaomi", "Samsung", "Apple"]]
 
+for (let i = 0; i < array.length; i++) {
+    console.log(array[i])
+}
+
 /* Acceder a un array */
 
 console.log(array) //Imprimir todo el array
@@ -27,4 +31,15 @@ colores.forEach(function (elemento) {
     console.log(`
     <li>${elemento}</li>
     `);
+});
+
+const carrito = [
+    { nombre: "Ryzen 5600G", precio: 800 },
+    { nombre: "Ryzen 5700G", precio: 1000 },
+    { nombre: "Monitor 22 pulgadas", precio: 400 },
+    { nombre: "Monitor 24 pulgadas", precio: 400 },
+]
+
+carrito.forEach(function (producto) {
+    console.log(`El producto ${producto.nombre}, su precio es: ${producto.precio}`);
 });
