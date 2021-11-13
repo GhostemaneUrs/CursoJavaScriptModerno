@@ -17,22 +17,22 @@ resta(20, 10);
 /* funciones en los objetos */
 
 const reproductor = {
-    crearPlaylist: function (nombrePlaylist, ...canciones) {
+    crearPlaylist: (nombrePlaylist, ...canciones) => {
         console.log(`La playlist ${nombrePlaylist} contiene las siguientes canciones: `);
         for (let i = 0; i < canciones.length; i++) {
             console.log(canciones[i]);
         }
     },
 
-    reproducir: function (nombrePlaylist) {
+    reproducir: (nombrePlaylist) => {
         console.log(`Reproduciendo playlist ${nombrePlaylist}`);
     },
 
-    pausar: function (nombrePlaylist) {
+    pausar: (nombrePlaylist) => {
         console.log(`Pausando playlist ${nombrePlaylist}`);
     },
 
-    borrar: function (nombrePlaylist) {
+    borrar: (nombrePlaylist) => {
         console.log(`Borrando playlist ${nombrePlaylist}`);
     }
 }
