@@ -65,3 +65,14 @@ const diaSemana = function (numero) {
 }
 
 diaSemana(1)
+
+/* Operador terneario */
+const autenticado = true;
+const puedePagar = true;
+console.log(autenticado ? puedePagar ? "Esta autenticado y puede pagar" : "Si esta autenticado, no puede pagar" : "No, no esta autenticado")
+
+const efectivo = 300
+const credito = 400
+const disponible = (efectivo + credito)
+const totalPagar = 600;
+
