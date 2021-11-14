@@ -82,7 +82,7 @@ class Movie {
         }
     }
 
-    validarPais(...pais) {
+    validarPais(pais) {
         if (!pais) {
             console.log("El valor no puede ser vacio")
         } else if (!pais instanceof Array) {
@@ -90,7 +90,7 @@ class Movie {
         }
     }
 
-    validarGenero(...genero) {
+    validarGenero(genero) {
         if (!genero) {
             console.log("El valor no puede ser vacio")
         } else if (!genero instanceof Array) {
