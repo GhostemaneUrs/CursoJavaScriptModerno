@@ -52,7 +52,7 @@ for (const key in persona) {
 }
 
 /* Una diferente forma de hacer un for */
-for (const [key, value] of Object.defineProperty(persona)) {
+for (const [key, value] of Object.entries(persona)) {
     console.log(`Llave: ${key}, valor: ${value}`)
 }
 
