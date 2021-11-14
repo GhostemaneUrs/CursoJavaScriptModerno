@@ -51,6 +51,11 @@ for (const key in persona) {
     console.log(`Llave: ${key}, valor: ${persona[key]}`)
 }
 
+/* Una diferente forma de hacer un for */
+for (const [key, value] of Object.entries(persona)) {
+    console.log(`Llave: ${key}, valor: ${value}`)
+}
+
 
 /* For of especial para recorrer todo tipo de objeto */
 let cadena = "Hola"
