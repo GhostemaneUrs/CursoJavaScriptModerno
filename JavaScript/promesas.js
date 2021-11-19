@@ -1,10 +1,10 @@
 /* Promesas en JavaScript */
 
 const elevarAlCuadrado = (numero) => {
-    return new Promise((resolve, reject) => {
-        if (!numero) {
-            reject(`Error: ${numero} es un valor vacio, escriba un numero, por favor`);
-        } else if (typeof numero !== 'number') {
+    if (!numero) {
+        reject(`Error: ${numero} es un valor vacio, escriba un numero, por favor`);
+    } return new Promise((resolve, reject) => {
+        if (typeof numero !== 'number') {
             reject(`Error: el valor ingresado "${numero}" no es un numero`);
         } else if (typeof numero === 'number') {
             setTimeout(() => {
