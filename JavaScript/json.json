@@ -1,0 +1,7 @@
+{
+  "nombre": "Andres",
+  "apellido": "Jaramillo",
+  "edad": "22",
+  "pais": "Colombia",
+  "hobbies": ["Leer", "Dormir", "Comer"]
+}
