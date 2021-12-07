@@ -30,6 +30,8 @@ console.log(navegacion.childNodes) /* Sirve para traer todos los nodos hijos */
 console.log(navegacion.children) /* Sirve para traer todos los nodos hijos */
 console.log(navegacion.children[0].nodeName) /* Sirve para traer el nombre del nodo hijo */
 console.log(navegacion.children[0].nodeType) /* Sirve para traer el tipo del nodo hijo */
+console.log(card.children[1].children[1])
+
 
 
 
